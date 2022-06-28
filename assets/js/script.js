@@ -42,13 +42,26 @@ if (okLowercase) {
   passGen += lowercase;
 }
 
+/* If password does not meet requirements alert informs you*/
+if(okNumber === false && okSpecial === false && okUppercase === false && okLowercase === false) {
+  var error = alert("Password must contain at least one type of character. Please try another");
+}
+
+/* Takes characters used and created password with specified length */
+let yourPassword = "";
+  for(var i = 0; i < passLength; i++) {
+    yourPassword += passGen[Math.floor(Math.random() * (passGen.length-1) +1)]
+  }
+  
+  return yourPassword;
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-}
 }
 
 // Add event listener to generate button
