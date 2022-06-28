@@ -6,4 +6,4 @@ After inputing specified length you are asked if you would like to use uppercase
 if you dont have at least 1 type of character chosen it will come up with an alert telling you that you need at least 1 type of character for it to work.
 after meeting requirements the generator will take your specifications and generate a randomized password for you.
 
-![screenshot](assets\images\pass-gen-screenshot.png)
+![screenshot](https://github.com/NateB98/Password-Generator/blob/main/assets/images/pass-gen-screenshot.png)
